@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 def process_transcript(json_file, output_file):
     """
@@ -50,6 +51,6 @@ def process_transcript(json_file, output_file):
 
 # Example usage
 if __name__ == "__main__":
-    input_json_file = "path_to_your_json_file.json"  # Replace with your JSON file path
+    input_json_file = Path("D:/Dropbox/McCallieFamilyStories/ZoomFest-Jan2025/zoomfest-video-jan-2025.json") 
     output_transcript_file = "output_transcript.txt"  # Replace with desired output file path
     process_transcript(input_json_file, output_transcript_file)
